@@ -1,25 +1,25 @@
 # Jiffy GRBL
 
-A simple, interactive Jupyter Notebook GUI for controlling GRBL-based laser engravers — including CO₂ lasers. Designed for safety, clarity, and hackability.
+Interactive Jupyter GUI for controlling your CO₂ laser via GRBL (Monport V2 board). Snapshot of features:
 
-## 🚀 Features
+## Features
+- X/Y jogging via GUI buttons
+- Homing & center-of-bed functions
+- Hold-to-fire 🔥 laser button
+- Power slider (S0–S1000)
+- Modular design: CLI, GUI, movement logic
 
-- Manual X/Y jogging with GUI arrows
-- Home and "center bed" buttons
-- Safe 🔥 laser fire button (momentary only)
-- Laser power slider (S0–S1000)
-- Compatible with Monport V2 GRBL boards
-- Runs inside VS Code with Jupyter kernel
-
-## 🛠 Requirements
-
-- Python 3.x with Anaconda or Miniconda
-- `ipywidgets`, `pyserial`, `jupyter`
-- VS Code + Jupyter extension (optional)
-
-## 📦 Installation
-
-Clone this repo and install dependencies with:
-
+## Setup
 ```bash
+git clone https://github.com/YourUsername/Jiffy-GRBL.git
+cd Jiffy-GRBL
 conda env create -f environment.yml
+conda activate Jiffy_GRBL
+code Jiffy_GRBL_1.ipynb
+```
+
+## Safety
+Laser only fires while button is held—no toggle or lock-on behavior.
+
+## License
+MIT
